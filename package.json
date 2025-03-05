@@ -2,10 +2,10 @@
   "name": "bonk-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "jest"
