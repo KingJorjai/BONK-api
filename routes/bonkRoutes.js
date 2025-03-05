@@ -22,7 +22,7 @@ router.get('/bonk/:name', async (req, res) => {
 		});
 
 		await bonkee.increment('bonks');
-		await bonkee.update({ updatedAt: now });
+		await bonkee.update({ updated_at: now });
 		await bonkee.reload();
 
 		res.status(200).json(bonkee);
